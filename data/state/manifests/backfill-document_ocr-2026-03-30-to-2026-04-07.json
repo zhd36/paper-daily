@@ -1,0 +1,37 @@
+{
+  "stage": "backfill",
+  "topic_id": "document_ocr",
+  "start_date": "2026-03-30",
+  "end_date": "2026-04-07",
+  "created_at": "2026-04-08T06:06:34Z",
+  "week_windows": [
+    {
+      "start_date": "2026-03-30",
+      "end_date": "2026-04-05",
+      "paper_count": 32,
+      "json_path": "data\\topics\\document_ocr\\weekly\\2026\\week-2026-03-30-to-2026-04-05.json",
+      "markdown_path": "data\\topics\\document_ocr\\weekly\\2026\\week-2026-03-30-to-2026-04-05.md"
+    },
+    {
+      "start_date": "2026-04-06",
+      "end_date": "2026-04-07",
+      "paper_count": 4,
+      "json_path": "data\\topics\\document_ocr\\weekly\\2026\\week-2026-04-06-to-2026-04-07.json",
+      "markdown_path": "data\\topics\\document_ocr\\weekly\\2026\\week-2026-04-06-to-2026-04-07.md"
+    }
+  ],
+  "window_count": 2,
+  "ingest": {
+    "total_entries": 5311
+  },
+  "normalize": {
+    "total_unique_papers": 3869
+  },
+  "recall": {
+    "input_papers": 3869,
+    "llm_input_papers": 143,
+    "included_papers": 44
+  },
+  "ingest_stage": "ingest_oai",
+  "date_kind": "created_date"
+}
