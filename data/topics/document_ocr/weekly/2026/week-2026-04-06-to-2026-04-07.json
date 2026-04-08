@@ -1,0 +1,260 @@
+{
+  "topic_id": "document_ocr",
+  "topic_name": "Document AI and OCR",
+  "start_date": "2026-04-06",
+  "end_date": "2026-04-07",
+  "created_at": "2026-04-08T06:06:34Z",
+  "paper_id_window_filtered_count": 1,
+  "paper_count": 4,
+  "papers": [
+    {
+      "paper_id": "2604.04771",
+      "base_paper_id": "2604.04771",
+      "version": null,
+      "title": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale",
+      "abstract": "Current document parsing methods compete primarily on model architecture innovation, while systematic engineering of training data remains underexplored. Yet SOTA models of different architectures and parameter scales exhibit highly consistent failure patterns on the same set of hard samples, suggesting that the performance bottleneck stems from shared deficiencies in training data rather than architecture itself. Building on this finding, we present \\minerupro, which advances the state of the art solely through data engineering and training strategy optimization while keeping the 1.2B-parameter architecture of \\mineru completely fixed. At its core is a Data Engine co-designed around coverage, informativeness, and annotation accuracy: Diversity-and-Difficulty-Aware Sampling expands training data from under 10M to 65.5M samples while correcting distribution shift; Cross-Model Consistency Verification leverages output agreement among heterogeneous models to assess sample difficulty and generate reliable annotations; the Judge-and-Refine pipeline improves annotation quality for hard samples through render-then-verify iterative correction. A three-stage progressive training strategy -- large-scale pre-training, hard sample fine-tuning, and GRPO alignment -- sequentially exploits these data at different quality tiers. On the evaluation front, we fix element-matching biases in OmniDocBench~v1.5 and introduce a Hard subset, establishing the more discriminative OmniDocBench~v1.6 protocol. Without any architectural modification, \\minerupro achieves 95.69 on OmniDocBench~v1.6, improving over the same-architecture baseline by 2.71 points and surpassing all existing methods including models with over 200$\\times$ more parameters.",
+      "authors": [
+        "Bin Wang",
+        "Tianyao He",
+        "Linke Ouyang",
+        "Fan Wu",
+        "Zhiyuan Zhao",
+        "Tao Chu",
+        "Yuan Qu",
+        "Zhenjiang Jin",
+        "Weijun Zeng",
+        "Ziyang Miao",
+        "Bangrui Xu",
+        "Junbo Niu",
+        "Mengzhang Cai",
+        "Jiantao Qiu",
+        "Qintong Zhang",
+        "Dongsheng Ma",
+        "Yuefeng Sun",
+        "Hejun Dong",
+        "Wenzheng Zhang",
+        "Jutao Xiao",
+        "Jiayong Shi",
+        "Pengyu Liao",
+        "Xiaomeng Zhao",
+        "Huaping Zhong",
+        "Liqun Wei",
+        "Jing Yu",
+        "Jie Yang",
+        "Wei Li",
+        "Shasha Wang",
+        "Qianqian Wu",
+        "Xuanhe Zhou",
+        "Weijia Li",
+        "Zhenxiang Li",
+        "Zhongying Tu",
+        "Jiang Wu",
+        "Lijun Wu",
+        "Chao Xu",
+        "Kai Chen",
+        "Wentao Zhang",
+        "Yu Qiao",
+        "Bowen Zhou",
+        "Dahua Lin",
+        "Conghui He"
+      ],
+      "comments": "Technical Report",
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_subject": "cs.CV",
+      "abs_url": "https://arxiv.org/abs/2604.04771",
+      "announcement_date": "2026-04-06",
+      "submitted_date": "2026-04-06",
+      "source_categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "fetched_at": "2026-04-08T06:02:13Z",
+      "keyword_score": 3,
+      "keyword_strong_hits": [
+        "document parsing"
+      ],
+      "keyword_medium_hits": [],
+      "keyword_candidate_hits": [
+        "document",
+        "form",
+        "parsing"
+      ],
+      "keyword_contextual_hits": [
+        "document+parse"
+      ],
+      "keyword_exclude_hits": [],
+      "llm_candidate": true,
+      "topic_id": "document_ocr",
+      "llm_decision": "include",
+      "llm_confidence": 1.0,
+      "llm_tags": [
+        "document parsing",
+        "data-centric",
+        "benchmark",
+        "document understanding"
+      ],
+      "llm_reason": "Directly advances document parsing through data engineering, with explicit focus on document parsing benchmarks and methods. Core contribution to document AI field.",
+      "included": true
+    },
+    {
+      "paper_id": "2604.04411",
+      "base_paper_id": "2604.04411",
+      "version": null,
+      "title": "Responses Fall Short of Understanding: Revealing the Gap between Internal Representations and Responses in Visual Document Understanding",
+      "abstract": "Visual document understanding (VDU) is a challenging task for large vision language models (LVLMs), requiring the integration of visual perception, text recognition, and reasoning over structured layouts. Although recent LVLMs have shown progress on VDU benchmarks, their performance is typically evaluated based on generated responses, which may not necessarily reflect whether the model has actually captured the required information internally. In this paper, we investigate how information required to solve VDU tasks is represented across different layers of LLMs within LVLMs using linear probing. Our study reveals that (1) there is a clear gap between internal representations and generated responses, and (2) information required to solve the task is often encoded more linearly from intermediate layers than from the final layer. Motivated by these findings, we explore fine-tuning strategies that target intermediate layers. Experiments show that fine-tuning intermediate layers improves both linear probing accuracy and response accuracy while narrowing the gap.",
+      "authors": [
+        "Haruka Kawasaki",
+        "Ryota Tanaka",
+        "Kyosuke Nishida"
+      ],
+      "comments": "Accepted to CVPR2026 workshop (MULA)",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_subject": "cs.CL",
+      "abs_url": "https://arxiv.org/abs/2604.04411",
+      "announcement_date": "2026-04-06",
+      "submitted_date": "2026-04-06",
+      "source_categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "fetched_at": "2026-04-08T06:02:13Z",
+      "keyword_score": 4,
+      "keyword_strong_hits": [
+        "document understanding"
+      ],
+      "keyword_medium_hits": [
+        "text recognition"
+      ],
+      "keyword_candidate_hits": [
+        "document",
+        "layout",
+        "form"
+      ],
+      "keyword_contextual_hits": [
+        "document+understand"
+      ],
+      "keyword_exclude_hits": [],
+      "llm_candidate": true,
+      "topic_id": "document_ocr",
+      "llm_decision": "include",
+      "llm_confidence": 1.0,
+      "llm_tags": [
+        "visual document understanding",
+        "VDU",
+        "text recognition",
+        "layout reasoning"
+      ],
+      "llm_reason": "Directly studies visual document understanding (VDU) with focus on text recognition and layout reasoning in LVLMs, central to document AI research.",
+      "included": true
+    },
+    {
+      "paper_id": "2604.04380",
+      "base_paper_id": "2604.04380",
+      "version": null,
+      "title": "CPT: Controllable and Editable Design Variations with Language Models",
+      "abstract": "Designing visually diverse and high-quality designs remains a manual, time-consuming process, limiting scalability and personalization in creative workflows. We present a system for generating editable design variations using a decoder-only language model, the Creative Pre-trained Transformer (CPT), trained to predict visual style attributes in design templates. At the core of our approach is a new representation called Creative Markup Language (CML), a compact, machine-learning-friendly format that captures canvas-level structure, page layout, and element-level details (text, images, and vector graphics), including both content and style. We fine-tune CPT on a large corpus of design templates authored by professional designers, enabling it to learn meaningful, context-aware predictions for attributes such as color schemes and font choices. The model produces semantically structured and stylistically coherent outputs, preserving internal consistency across elements. Unlike generative image models, our system yields fully editable design documents rather than pixel-only images, allowing users to iterate and personalize within a design editor. In experiments, our approach generates contextual color and font variations for existing templates and shows promise in adjusting layouts while maintaining design principles.",
+      "authors": [
+        "Karthik Suresh",
+        "Amine Ben Khalifa",
+        "Li Zhang",
+        "Wei-ting Hsu",
+        "Fangzheng Wu",
+        "Vinay More",
+        "Asim Kadav"
+      ],
+      "comments": "18 pages, 6 figures, Accepted at NeurIPS 2025 Workshop on Generative and Protective AI for Content Creation (GenProCC 2025)",
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_subject": "cs.LG",
+      "abs_url": "https://arxiv.org/abs/2604.04380",
+      "announcement_date": "2026-04-06",
+      "submitted_date": "2026-04-06",
+      "source_categories": [
+        "cs.LG"
+      ],
+      "fetched_at": "2026-04-08T06:02:13Z",
+      "keyword_score": 0,
+      "keyword_strong_hits": [],
+      "keyword_medium_hits": [],
+      "keyword_candidate_hits": [
+        "document",
+        "documents",
+        "layout",
+        "table",
+        "form"
+      ],
+      "keyword_contextual_hits": [
+        "document+understand"
+      ],
+      "keyword_exclude_hits": [],
+      "llm_candidate": true,
+      "topic_id": "document_ocr",
+      "llm_decision": "include",
+      "llm_confidence": 0.9,
+      "llm_tags": [
+        "document generation",
+        "layout generation",
+        "design templates",
+        "editable documents"
+      ],
+      "llm_reason": "Explicitly targets document/layout generation with structured markup language for editable design documents, directly addressing document AI tasks.",
+      "included": true
+    },
+    {
+      "paper_id": "2604.02103",
+      "base_paper_id": "2604.02103",
+      "version": null,
+      "title": "CASHG: Context-Aware Stylized Online Handwriting Generation",
+      "abstract": "Online handwriting represents strokes as time-ordered trajectories, which makes handwritten content easier to transform and reuse in a wide range of applications. However, generating natural sentence-level online handwriting that faithfully reflects a writer's style remains challenging, since sentence synthesis demands context-dependent characters with stroke continuity and spacing. Prior methods treat these boundary properties as implicit outcomes of sequence modeling, which becomes unreliable at the sentence scale and under limited compositional diversity. We propose CASHG, a context-aware stylized online handwriting generator that explicitly models inter-character connectivity for style-consistent sentence-level trajectory synthesis. CASHG uses a Character Context Encoder to obtain character identity and sentence-dependent context memory and fuses them in a bigram-aware sliding-window Transformer decoder that emphasizes local predecessor--current transitions, complemented by gated context fusion for sentence-level context.Training proceeds through a three-stage curriculum from isolated glyphs to full sentences, improving robustness under sparse transition coverage. We further introduce Connectivity and Spacing Metrics (CSM), a boundary-aware evaluation suite that quantifies cursive connectivity and spacing similarity. Under benchmark-matched evaluation protocols, CASHG consistently improves CSM over comparison methods while remaining competitive in DTW-based trajectory similarity, with gains corroborated by a human evaluation.",
+      "authors": [
+        "Jinsu Shin",
+        "Sungeun Hong",
+        "JinYeong Bak"
+      ],
+      "comments": "42 pages, 19 figures",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "primary_subject": "cs.CV",
+      "abs_url": "https://arxiv.org/abs/2604.02103",
+      "announcement_date": "2026-04-06",
+      "submitted_date": "2026-04-06",
+      "source_categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "fetched_at": "2026-04-08T06:02:13Z",
+      "keyword_score": 0,
+      "keyword_strong_hits": [],
+      "keyword_medium_hits": [],
+      "keyword_candidate_hits": [
+        "handwritten",
+        "form",
+        "parse"
+      ],
+      "keyword_contextual_hits": [],
+      "keyword_exclude_hits": [],
+      "llm_candidate": true,
+      "topic_id": "document_ocr",
+      "llm_decision": "include",
+      "llm_confidence": 0.95,
+      "llm_tags": [
+        "handwriting generation",
+        "online handwriting",
+        "stroke synthesis"
+      ],
+      "llm_reason": "Directly addresses online handwriting generation at sentence level, which is a core OCR/document AI task for handwritten text synthesis and style modeling.",
+      "included": true
+    }
+  ]
+}
